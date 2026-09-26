@@ -33,6 +33,9 @@ a{color:inherit}
 .btn-ghost{border:2px solid rgba(255,255,255,.5);color:var(--white)}
 .btn svg{width:22px;height:22px;flex:none}
 
+.phone-text{display:inline-flex;align-items:center;font-weight:600;font-size:1.05rem;color:var(--gold-soft);font-variant-numeric:tabular-nums;letter-spacing:.03em;user-select:all}
+.phone-text strong{color:inherit;margin-left:6px;font-size:1.25rem}
+
 /* top bar */
 .bar{background:var(--navy-deep);color:#fff;font-size:.85rem}
 .bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:8px;flex-wrap:wrap}
@@ -119,10 +122,6 @@ footer{background:var(--navy-deep);border-top:1px solid rgba(255,255,255,.1);col
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-block:22px}
 footer em{color:var(--gold-soft)}
 
-/* floating WhatsApp */
-.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);z-index:10}
-.fab svg{width:30px;height:30px;color:#fff}
-.fab:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:hover{transform:none}}
 </style>
 </head>
@@ -170,9 +169,7 @@ footer em{color:var(--gold-soft)}
         <h1 style="margin-top:12px">¿Estás desarrollando tu <em>proyecto o tesis?</em></h1>
         <p class="lead">Avanza con método y respaldo experto. Te acompañamos desde la idea hasta la sustentación.</p>
         <div class="ctas">
-          <a class="btn btn-gold" href="https://wa.me/51949611921?text=Hola%20METODIKA%2C%20quisiera%20informaci%C3%B3n%20sobre%20asesor%C3%ADa%20para%20mi%20tesis" target="_blank" rel="noopener">
-            <svg><use href="#wa"/></svg> Escríbenos por WhatsApp
-          </a>
+          <span class="phone-text">WhatsApp: <strong>949 611 921</strong></span>
           <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
         </div>
         <p class="note">Tu investigación, nuestra experiencia.</p>
@@ -246,7 +243,7 @@ footer em{color:var(--gold-soft)}
         <article class="svc"><span class="tag">Formación</span><h3>Capacitación</h3>
           <ul><li>Metodología de la investigación</li><li>Elaboración de tesis y redacción científica</li><li>APA 7 y construcción de instrumentos</li><li>Investigación cuantitativa y cualitativa</li><li>Publicación científica</li></ul></article>
         <article class="svc cta-card"><div><span class="tag">Consulta gratuita</span><h3 style="margin-top:8px">La calidad de tu investigación también se escribe con nosotros.</h3></div>
-          <a class="btn btn-gold" href="https://wa.me/51949611921?text=Hola%20METODIKA%2C%20quisiera%20una%20consulta%20gratuita" target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Solicitar consulta</a></article>
+          <span class="phone-text">WhatsApp: <strong>949 611 921</strong></span></article>
       </div>
     </div>
   </section>
@@ -272,7 +269,6 @@ footer em{color:var(--gold-soft)}
       </div>
       <div class="side">
         <span class="phone">949 611 921</span>
-        <a class="btn btn-gold" href="https://wa.me/51949611921?text=Hola%20METODIKA%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Escribir por WhatsApp</a>
         <small>Consulta gratuita sin compromiso</small>
       </div>
     </div>
@@ -286,6 +282,5 @@ footer em{color:var(--gold-soft)}
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/51949611921?text=Hola%20METODIKA%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 949 611 921"><svg><use href="#wa"/></svg></a>
 </body>
 </html>
